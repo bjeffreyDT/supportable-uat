@@ -20,9 +20,9 @@ a {
     font-weight: 600;
 }
 
-/* a:hover {
-    color: #adacd2;
-} */
+li {
+    margin-bottom: 10px;
+}
 
 .logo-header {
     width: 400px;
