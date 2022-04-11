@@ -124,44 +124,27 @@
     </svg>
 </div>
 <div style="margin-left: 5%; margin-right: 5%; margin-bottom: 10%;">
-    <h1>USER STORY 1: SUBMITTING A REFERRAL</h1>
+    <h1>USER STORY 3: FILTERING REFERRALS</h1>
     <h2> OBJECTIVE </h2>
-	Use the company-specific form to submit a referral into Supportable. <br><br><br>
+	Use the filtering and search controls to find referrals in the database. <br><br><br>
     
 	<h2> INSTRUCTIONS </h2>
-	The instructions here are simple. Fill out the form. I'm intentially not being specific because any person off the street should be able to fill out this form.
-	The more times you fill out the form, the more insight you'll gain, and the more data you'll have to play with when you get into Supportable.
-	Try to add both variation and similarity to names, dates of birth, address, Social Security Number, etc. These are all data points that the system will use to find
-	existing people in the system.
-	<br><br>
-	Remember, no PHI!
-	<br><br>
 	<ol>
-		<li> Open the link to your respective referral form.
-			(<a href="https://referral-uat.azurewebsites.net/launch/f13ca54d-d697-441b-9ab0-380be38a8d8a" target="_blank">CS</a> | 
-			<a href="https://referral-uat.azurewebsites.net/launch/f60c6106-3c68-4bd7-a591-055b339939ea" target="_blank">OFBS</a> | 
-			<a href="https://referral-uat.azurewebsites.net/launch/c74e7b36-abe4-473a-b6fe-f5fd3248bdeb" target="_blank">OR</a> | 
-			<a href="https://referral-uat.azurewebsites.net/launch/1fa2d337-cb71-4f1e-aa12-b8e005f6fccc" target="_blank">RRR</a> )
-		</li>
+		<li> Navigate to Supportable with any web browser. Google Chrome is always the most optimal option. <a href="https://supportable-web-uat.azurewebsites.net/" target="_blank">Here is the link.</a> </li>
+		<li> Use your credentials to enter your username and password. </li>
+		<li> Click the <i><b>Show Filters</b></i> button. </li>
 		<li> Read the <i>ISSUES/DESIGN FLAWS WE'RE ALREADY AWARE OF</i> section below. </li>
-		<li> Fill out and submit a referral. The referral is designed to time out after 15 minutes. So if you're multitasking and you leave the page unattended for that long, you'll have to start over. </li>
-		<li> A successful submission will provide you a confirmation number. Write at least one of these down. You'll be able to use it to search for a specific referral once your in Supportable. </li>
-		<li> Repeat as many times as you are able. Try it on your phone, tablet, etc. </li>
+		<li> Use the controls to filter the referrals you have put in. Your options will be limited for now until we release more features that will add filterable attributes to referrals. </li>
+		<li> Use the search bar above the referral  </li>
 		<li> When you feel you've gathered enough impressions, fill out and submit the <a href="https://zfrmz.com/HX77s5TmRWM5qUkE2Iig" target="_blank">UAT Feedback Form</a>
-		first by choosing <b>Story 1. Submitting a referral</b> in the first dropdown. </li>
+		first by choosing <b>Story 2. Login and intro to landing page</b> in the first dropdown. </li>
 	</ol>
 	<br><br><br>
 	<h2> ISSUES/DESIGN NOTES WE'RE ALREADY AWARE OF </h2>
 	<ol>
-		<li> Welcome page: the footer will be anchored to the bottom. </li>
-		<li> Color scheme of left-hand banner, buttons, progress bar, etc. will match company branding. </li>
-		<li> All text fields will allow hyphens and apostrophes. They currently do not. </li>
-		<li> All date-picker fields will be reduced in horizontal size so you don't have to reach all the way to the right. </li>
-		<li> All phone number fields will auto-enter hyphens to visually format the numbers. </li>
-		<li> The <i>Date of Birth</i> field's behavior is weird. It yells at you before you even get a chance to enter something. </li>
-		<li> Currently the <i>Social Security Number</i> field requires 10 digits, where social security numbers are 9. </li>
-		<li> Page 4 - Payer Information: A repeater function is in process to allow you to enter as many payers as you want. For now, enter information for only one payer. It doesn't matter if it resembles actual BCBS/MA/etc. payer info. Also, we'll be adding PMI as a field.</li>
-		<li> Page 4 - Payer Information: <i>Individual's Active Waiver Type</i> will be removed from the form. It poses a complex issue in the system when a referral is sumbitted for a person a second time, one that we will not be tackling for our MVP. There is a place within Supportable for users to enter and control that information, however. </li>
+		<li> For now, there will be no <i>Inactive</i> referrals because we have not yet released the ability to move a referral through a stage. Therefore, filtering for inactive referrals will produce no results. </li>
+		<li> Also, we have not yet released the ability to assign Point Persons, so you won't be able to filter that way either. </li>
+		<li> In the search bar, the <i>Referral ID</i> is the same as the <i>Confirmation Number</i> you get after submitting a referral. We plan to make this language consistent. Which do you prefer, Referral ID or Confirmation Number? </li>
 	</ol>
     </p>
 </div>
