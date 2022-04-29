@@ -16,9 +16,33 @@ h2 {
     color: #5E5DA8;
 }
 
-a {
+h3 {
+    font-family: 'Comfortaa'; font-size: 16px; font-weight: bold;
+    text-align: left;
     color: #5E5DA8;
-    font-weight: 600;
+}
+
+a {
+    font-weight: 500;
+	text-decoration: none;
+    color: #5C5CB8;
+    background: linear-gradient(0deg, #6A7DFE, #6A7DFE) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    padding-bottom: 2px;
+    --bg-h: 2px;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: 500;
+    color: #6A7DFE;
+}
+
+a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    padding-bottom: 2px;
+    --bg-h: 2px;
 }
 
 li {
@@ -42,7 +66,7 @@ li {
 }
 
 .button:hover {
-	background-color: #7b7ab8;
+	background-color: #6A7DFE;
   	color: white;
   	padding: 14px 25px;
   	text-align: center;
@@ -197,11 +221,11 @@ li {
     border-bottom: 2px solid #F5F4F0;
   }
   
-  .mynavbar li {
+.mynavbar li {
     float: left;
   }
   
-  .mynavbar li a {
+.mynavbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -209,7 +233,7 @@ li {
     text-decoration: none;
   }
   
-  .mynavbar li a:hover:not(.active) {
+.mynavbar li a:hover {
     color: #e3a711;
   }
   

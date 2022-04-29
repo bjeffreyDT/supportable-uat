@@ -124,39 +124,41 @@
     </svg>
 </div>
 <div style="margin-left: 5%; margin-right: 5%; margin-bottom: 10%;">
-    <h1>USER STORY 5: NEW REFERRAL IN APP - MATCH TO EXISTING PERSON</h1>
+    <h1>STORY 7. PROCESSING AND MANAGING PAYERS</h1>
     <h2> OBJECTIVE </h2>
-	Match a referral with a person in the database. <br><br><br>
+	Inspect payer information from referral. Determine if person already has payer(s) associated. Gather, verify, and clean information. Add payers as necessary. <br><br><br>
     
 	<h2> INSTRUCTIONS </h2>
-	When a referral is submitted, the system is essentially receiving raw, unprocessed data. Because people are complicated and nuanced, we've determined it is best 
-	practice to require a human being to decide whether or not this person exists in the database, meaning the company has at least received a referral from this person before. 
-	The purpose of this is eliminate duplicate records and keep data nice and clean. 
-	The system does helps you find matches, but at the end of the day, the decision is yours. <br>
-	<br>
-	So in this scenario, you are opening a referral and prompting the system to find any person matches in the system. Then you are linking that referral to the person's record. <br>
-	<br>
-	Side note, the persons database is central to all companies within Options Minnesota. This means that as the database grows, you'll be able to match people across entities, allowing 
-	for more streamlined information and continuity while maintaining minimum necessary standards.
+	When a referrent enters payer (insurance) information into the person's referral, the information will land here. It is up to you as the user to
+	take a close look at this information. Do we already have this information on record? If not, process the referral information into the person's record. <br><br>
+
+	<h3> PREREQUISITES </h3>
+	To process in a payer from a referral, you will need to have a referral that has payers included. To ensure you are able to see all current features, you may need to
+	<a href="01-submitting_referral.html" target="_blank">submit another referral</a>. This is a good opportunity to test out the new multiple payer feature on the referral. <br><br>
 
 	<ol>
 		<li> Navigate to Supportable with any web browser. Google Chrome is always the most optimal option. <a href="https://supportable-web-uat.azurewebsites.net/" target="_blank">Here is the link.</a> </li>
-		<li> Use your credentials to enter your username and password. </li>
+		<li> Use your credentials to enter your username and password (the one you got in an email) . </li>
 		<li> Read the <i>ISSUES/DESIGN FLAWS WE'RE ALREADY AWARE OF</i> section below. </li>
-		<li> Open a new referral. </li>
-		<li> Observe the potential matches given to you by the system. </li>
-		<li> Select a person record </li>
-		<li> Compare the differences between the information in the referral to the information in the person's record. </li>
-		<li> You can choose to overwrite the information in the person's record with the new information from the referral. </li>
-		<li> Clicking the <i>Create & Link Record</i> button will create the person's record in the system and link the referral to them. This allows to link other new referrals to this person as they come. </li>
+		<li> Open a referral that has made it passed the "New" stage. </li>
+		<li> Click the <i>View Referral Details</i> button. </li>
+		<li> Click the <i>Payers</i> tab. </li>
+		<li> Without more intruction, process any contacts. Make a few up. Is this intuitive enough to figure out yourself? Can you figure out how to designate a payer as primary? </li>
 		<li> When you feel you've gathered enough impressions, fill out and submit the <a href="https://zfrmz.com/HX77s5TmRWM5qUkE2Iig" target="_blank">UAT Feedback Form</a>
-		first by choosing <b>Story 5. New referral in app - match to existing person</b> in the first dropdown. </li>
+		first by choosing <b>Story 7. Processing and Managing Payers</b> in the first dropdown. </li>
 	</ol>
 	<br><br><br>
 	<h2> ISSUES/DESIGN NOTES WE'RE ALREADY AWARE OF </h2>
 	<ol>
-		<li> The <i>X</i> in the upper-right corner of <i>Selected Referral</i> window (right drawer) to close is unfinished and will be styled differently. </li>
-		<li> All button hover effects will be styled differently to match Supportable branding and design system. </li>
+		<li> When opening a referral in the screening stage, the <i>View Referral Details</i> button defaults to highlighted. This will be fixed. </li>
+		<li> Links are not on-brand. They are currently blue but will match style of the rest of the application. </li>
+		<li> The hover effect on buttons is not finalized but will be consistent across the application. </li>
+		<li> When adding a payer: </li>
+			<ol type="a">
+			<li> The <b>Payer</b> input field will be a dropdown list of accepted payers instead of an auto-complete. </li>
+			<li> The <b>Date</b> input field will allow typing. This will be consistent across all date inputs. </li>
+			<li> The <b>Relationship to Individual</b> dropdown options will be narrowed down to appropriate relationships ie. not a nurse, hospital worker, etc. </li>
+			</ol>
 	</ol>
     </p>
 </div>
