@@ -129,28 +129,28 @@
 	Complete the checklist for a stage of a referral. <br><br><br>
     
 	<h2> INSTRUCTIONS </h2>
-	This is where contact logs are 
+	Each referral will go through a series of stages. Each stage has a checklist associated to it. These checklists are customizable by stage and service, with the exception of the "New" stage. In this demonstration, all referrals have the same checklist.
+	 Completion of a checklist is one of two system requirements for the completion of a stage. More on the other requirement later. <br><br> 
+
+	<b>Important note:</b> Checklists are gathered for a referral at the time the referral reaches the stage. If a checklist template is updated after a referral hits the stage, the checklist will not be updated for the existing referral. All subsequent referrals that hit the still will inherit the updated template.
+	 This is why some referrals currently in the UAT environment do not have a checklist for the screening stage. The referral was submitted before the checklist was created.
 
 	<ol>
 		<li> Navigate to Supportable with any web browser. Google Chrome is always the most optimal option. <a href="https://supportable-web-uat.azurewebsites.net/" target="_blank">Here is the link.</a> </li>
 		<li> Use your credentials to enter your username and password. </li>
 		<li> Read the <i>ISSUES/DESIGN FLAWS WE'RE ALREADY AWARE OF</i> section below. </li>
 		<li> Open a referral that has made it passed the "New" stage. </li>
-		<li> Click the <i>View Referral Details</i> button. </li>
-		<li> Click the <i>Contacts</i> tab. </li>
-		<li> Without more intruction, process any contacts. Make a few up. Is this intuitive enough to figure out yourself? Can you figure out how to designate an emergency contact? </li>
+		<li> Process any checklist items. </li>
 		<li> When you feel you've gathered enough impressions, fill out and submit the <a href="https://zfrmz.com/HX77s5TmRWM5qUkE2Iig" target="_blank">UAT Feedback Form</a>
-		first by choosing <b>Story 8. Contact Logs and Notes</b> in the first dropdown. </li>
+		first by choosing <b>Story 9. Checklists</b> in the first dropdown. </li>
 	</ol>
 	<br><br><br>
 	<h2> ISSUES/DESIGN NOTES WE'RE ALREADY AWARE OF </h2>
 	<ol>
-		<li> When opening a referral in the screening stage, the <i>View Referral Details</i> button defaults to highlighted. This will be fixed. </li>
-		<li> Links are not on-brand. They are currently blue but will match style of the rest of the application. </li>
+		<li> There will be a function that does not allow a checklist item to be marked as "Not Applicable". This has not been implemented yet. </li>
+		<li> Icons and radio buttons are not on-brand. They will match the style of the rest of the application. </li>
 		<li> The hover effect on buttons is not finalized but will be consistent across the application. </li>
-		<li> The date and time format will be mm/dd/yyyy 12:00am </li>
-		<li> Final consistent styling of lists are in development, this means all lists will have the same look and feel. Currently, the headers on this list do not stand out from the list item content. </li>
-		<li> The search function has not been implemented yet. </li>
+		<li> The date and time format will be mm/dd/yyyy 12:00am for a completed item and will also include the name of the user who completed the checklist </li>
 	</ol>
     </p>
 </div>
